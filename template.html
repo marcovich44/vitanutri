@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaNutri</title>
+    <style>
+        body {
+            font-family: fantasy, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #88DC65;
+            color: #88DC65;
+            border: 2px solid black;
+        }
+
+        header {
+            background-color: #333;
+            color: #88DC65;
+            padding: 1em;
+            text-align: center;
+            position: relative;
+            font-family: cursive;
+        }
+
+        header img {
+            position: absolute;
+            top: 70%;
+            left: 750px;
+            transform: translateY(-70%);
+            width: 160px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1em 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #88DC65;
+            text-decoration: none;
+            padding: 15px;
+            font-style: italic;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #2D572C;
+            color: #fff;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        article {
+            border: 2px solid #2D572C;
+            padding: 1em;
+            background-color: #fff;
+            margin-bottom: 2em;
+        }
+
+        article figure {
+            float: right;
+            margin-left: 60px;
+            margin-top: -85px;
+        }
+
+        article img {
+            width: 550px;
+            height: auto;
+            margin-right: -55px;
+        }
+
+        article h2 a {
+            color: #333;
+            padding: 1em;
+            text-align: left;
+            position: relative;
+            font-family: cursive;
+            transition: color 0.3s;
+        }
+
+        article h2 a:hover {
+            text-decoration: underline;
+            color: #2D572C;
+        }
+
+        footer {
+            background-color: #333;
+            color: #88DC65;
+            text-align: center;
+            padding: 0.01em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-family: cursive;
+        }
+
+        ul {
+            color: #88DC65;
+            padding: 1em;
+            position: relative;
+            font-family: cursive;
+        }
+
+        figure p {
+            color: #88DC65;
+            padding: 1em;
+            text-align: left;
+            position: relative;
+            font-family: cursive;
+        }
+
+        p {
+            color: #88DC65;
+            padding: 1em;
+            text-align: center;
+            position: relative;
+            font-family: cursive;
+        }
+
+        .secciones-container {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        figure img {
+            width: 50px;
+            height: auto;
+            margin-right: -55px;
+        }
+
+        section article:first-child figure img {
+            width: 490px;
+            height: auto;
+            margin-right: -30px;
+        }
+
+        section article:first-child figure {
+            margin-left: 0;
+            margin-top: 20;
+        }
+
+        section article#noticia2 figure img {
+            width: 520px;
+            height: auto;
+            margin-left: -30px;
+        }
+
+        section article#noticia3 figure img {
+            width: 520px;
+            height: auto;
+            margin-left: -30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="safas.png" alt="Imagen de encabezado">
+        <h1>VitaNutri</h1>
+        <h2>Vitalidad y Nutricion</h2>
+    </header>
+
+    <nav>
+        <a href="receta2.html">Recetas Cetogénicas</a>
+        <a href="recetas1.html">Recetas Mediterráneas</a>
+        <a href="recetas3.html">Recetas Paleo</a>
+    </nav>
+
+    <section>
+        <article id="noticia1">
+            <h2><a href="noticia1.html">Dieta Cetogénica</a></h2>
+            <figure>
+                <img src="david-b-townsend-fV3zTanbO80-unsplash.jpg" alt="dieta keto">
+            </figure>
+            <p>La mejor dieta baja en carbohidratos</p>
+            <ul>
+                <li>Pérdida de Peso</li>
+                <li>Control del Azúcar en Sangre</li>
+                <li>Mayor Energía y Enfoque</li>
+                <li>Reducción del Hambre</li>
+                <li>Mejora del Perfil Lipídico</li>
+                <li>Reducción de la Inflamación</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <article id="noticia2">
+            <h2><a href="noticia2.html">Dieta Mediterránea</a></h2>
+            <figure>
+                <img src="nathan-powers-0Qrr3t5IfOo-unsplash.jpg" alt="dieta mediterránea">
+            </figure>
+            <p>La mejor dieta alta en proteínas</p>
+            <ul>
+                <li>Longevidad</li>
+                <li>Prevención de Enfermedades Crónicas</li>
+                <li>Mejora de los Perfiles Lipídicos</li>
+                <li>Salud Ósea</li>
+                <li>Propiedades Antiinflamatorias</li>
+                <li>Control del Peso</li>
+            </ul>
+        </article>
+    </section>
+
+    <section>
+        <article id="noticia3">
+            <h2><a href="noticia3.html">Dieta Paleo</a></h2>
+            <figure>
+                <img src="eiliv-aceron-YlAmh_X_SsE-unsplash.jpg" alt="dieta paleo">
+            </figure>
+            <p>La mejor dieta para la reducción de la inflamación</p>
+            <ul>
+                <li>Promoción de alimentos frescos y enteros</li>
+                <li>Aumento de la saciedad</li>
+                <li>Promoción de la pérdida de peso</li>
+                <li>Promoción de una piel más saludable</li>
+                <li>Reducción de alergias alimentarias</li>
+                <li>Mayor consumo de nutrientes esenciales</li>
+            </ul>
+        </article>
+    </section>
+ <br>
+ <br>
+ <br>
+ <br>
+    <footer>
+        <p>&copy;Vitanutri</p>
+    </footer>
+</body>
+</html>
