@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +26,8 @@
         header img {
             position: absolute;
             top: 70%;
-            left: 50%;
-            transform: translate(-50%, -70%);
+            left: 750px;
+            transform: translateY(-70%);
             width: 160px;
         }
 
@@ -68,15 +67,14 @@
 
         article figure {
             float: right;
-            margin-left: 0;
-            margin-top: 0;
-            text-align: center;
+            margin-left: 60px;
+            margin-top: -85px;
         }
 
         article img {
-            width: 100%;
+            width: 550px;
             height: auto;
-            margin: 0; /* Elimina el margen derecho */
+            margin-right: -55px;
         }
 
         article h2 a {
@@ -136,35 +134,33 @@
         figure img {
             width: 50px;
             height: auto;
-            margin-right: 0; /* Ajusta el margen derecho */
+            margin-right: -55px;
         }
 
-        @media only screen and (max-width: 600px) {
-            /* Estilos adicionales para pantallas pequeñas */
-            header img {
-                width: 80px;
-            }
+        section article:first-child figure img {
+            width: 520px;
+            height: auto;
+            margin-right: -30px;
+        }
 
-            nav a {
-                padding: 10px;
-            }
+        section article:first-child figure {
+            margin-left: 0;
+            margin-top: 20;
+        }
 
-            article figure {
-                float: none;
-                margin: 0;
-            }
+        section article#noticia2 figure img {
+            width: 520px;
+            height: auto;
+            margin-left: -30px;
+        }
 
-            article img {
-                margin: 0; /* Elimina el margen derecho */
-            }
-
-            article h2 a {
-                text-align: center;
-            }
+        section article#noticia3 figure img {
+            width: 520px;
+            height: auto;
+            margin-left: -30px;
         }
     </style>
 </head>
-
 <body>
     <header>
         <img src="safas.png" alt="Imagen de encabezado">
@@ -231,14 +227,14 @@
             </ul>
         </article>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
+ <br>
+ <br>
+ <br>
+ <br>
     <footer>
         <p>&copy;Vitanutri</p>
     </footer>
 </body>
-
 </html>
+
 
